@@ -49,7 +49,7 @@ export default {
         color: 'cyan',
         year: '2021',
         institution: 'NYCU, Hsinchu, Taiwan',
-        description: 'bachelor in software engineering',
+        description: 'bachelor in computer science',
         date: 'sep, 2021-present'
       },
     ],

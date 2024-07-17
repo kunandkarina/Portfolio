@@ -52,7 +52,7 @@ export default {
 
 <style>
 .move-down {
-  margin-top: 64px; /* 或者你想要的任何數值 */
+  margin-top: 64px;
 }
 </style>
 
