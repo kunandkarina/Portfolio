@@ -1,4 +1,4 @@
-# mw_portfolio
+# MW_portfolio
 See: [Website](https://kunandkarina.netlify.app/)
 
 ## Project setup
