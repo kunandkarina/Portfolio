@@ -7,32 +7,32 @@
               <v-divider :thickness="2" class="mx-auto border-opacity-50" style="width: 555px; color: rgb(211, 210, 210)"></v-divider>
             </v-col>
         </v-row>
-        <v-row align="center" justify="center" dense>
-          <v-col v-for="(card, index) in cards" :key="index" cols="12" sm="6" md="5" class="d-flex justify-center pa-2">
-            <v-card class="mx-auto d-flex flex-column align-center custom-card" height="300" width="400" color="#343a40">
-              <v-card-title class="text-center">{{ card.title }}</v-card-title>
-              <v-icon :icon="card.icon" size="large" class="mt-n2"></v-icon>
-              <v-card-text v-if="card.title === 'Languages'" class="text-center d-flex justify-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" class="icon mr-4"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" class="icon mx-4"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="icon ml-4"/>
-              </v-card-text>
-              <v-card-text v-if="card.title === 'Front-end'" class="text-center d-flex justify-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" class="icon mr-4"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" class="icon mx-4"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg" class="icon ml-4"/>
-              </v-card-text>
-              <v-card-text v-if="card.title === 'Database'" class="text-center d-flex justify-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" class="icon"/>
-              </v-card-text>
-              <v-card-text v-if="card.title === 'Others'" class="text-center d-flex justify-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="icon mr-4"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" class="icon mx-4"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" class="icon ml-4"/>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
+        <v-row justify="center">
+        <v-col v-for="(card, index) in cards" :key="index" cols="6" class="d-flex">
+          <v-card class="mx-auto d-flex flex-column align-center custom-card" height="300" width="400" color="#343a40">
+            <v-card-title class="text-center">{{ card.title }}</v-card-title>
+            <v-icon :icon="card.icon" size="large" class="mt-n2"></v-icon>
+            <v-card-text v-if="card.title === 'Languages'" class="text-center d-flex justify-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" class="icon mr-4"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" class="icon mx-4"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="icon ml-4"/>
+            </v-card-text>
+            <v-card-text v-if="card.title === 'Front-end'" class="text-center d-flex justify-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" class="icon mr-4"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" class="icon mx-4"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg" class="icon ml-4"/>
+            </v-card-text>
+            <v-card-text v-if="card.title === 'Database'" class="text-center d-flex justify-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" class="icon"/>
+            </v-card-text>
+            <v-card-text v-if="card.title === 'Others'" class="text-center d-flex justify-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="icon mr-4"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" class="icon mx-4"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" class="icon ml-4"/>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>  
   </section>
 </template>
